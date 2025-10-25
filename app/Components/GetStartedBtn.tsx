@@ -3,12 +3,17 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-const GetStartedBtn: React.FC = () => {
+interface GetStartedBtnProps {
+  path: string; // 👈 new prop for navigation path
+}
+
+const GetStartedBtn: React.FC<GetStartedBtnProps> = ({ path }) => {
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
   return (
     <div className="flex justify-end items-center gap-[17px] shrink-0 p-[2px_2px_2px_16px] w-[179px] h-12">
-      <button
+      <motion.a
+        href={path}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         className="relative flex items-center justify-start w-[159px] h-12 rounded-[192px] border border-white bg-white overflow-hidden"
@@ -63,7 +68,7 @@ const GetStartedBtn: React.FC = () => {
             </div>
           </motion.span>
         </div>
-      </button>
+      </motion.a>
     </div>
   );
 };
