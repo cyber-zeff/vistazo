@@ -1,18 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import Navbar from "./Navbar";
 import Typewriter from "./Typewriter";
 import GetStartedBtn from "./GetStartedBtn";
 
 export default function Showcase() {
   return (
     <section className="bg-main text-white min-h-screen flex flex-col items-center">
-      {/* Navbar */}
-      <Navbar />
 
       {/* Showcase Container */}
-      <div className="relative flex flex-col justify-center w-full max-w-[1440px] px-6 md:px-16 py-12 md:py-24 overflow-hidden">
+      <div className="relative flex flex-col justify-center w-full max-w-[1440px] px-6 md:px-16 py-12 md:py-16 overflow-hidden">
         
         {/* DESKTOP / LAPTOP VERSION */}
         <div className="hidden md:block relative z-10">
@@ -58,7 +55,7 @@ export default function Showcase() {
           </div>
 
           {/* Text + CTA */}
-          <div className="mt-20 max-w-md">
+          <div className="mt-16 max-w-md">
             <p className="text-gray-200 text-lg mb-6">
               We create custom websites that make your work stand out and get you{" "}
               <span className="font-semibold italic text-white">paid.</span>
