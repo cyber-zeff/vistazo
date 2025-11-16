@@ -11,7 +11,7 @@ export default function BookACallBtn({ path }: BookACallBtnProps) {
   const [hover, setHover] = useState(false);
 
   return (
-    <div className="flex items-center justify-center gap-2 py-4 px-10">
+    <div className="flex items-center justify-center gap-2 py-3 px-10">
       <motion.a
         href={path}
         onMouseEnter={() => setHover(true)}
@@ -23,7 +23,7 @@ export default function BookACallBtn({ path }: BookACallBtnProps) {
             : "0px 6px 0px 0px #FFFFFF",
         }}
         transition={{ duration: 0.2, ease: "easeInOut" }}
-        className="bookACall px-6 py-3 border-2 border-white bg-main rounded-[100px]"
+        className="bookACall px-6 py-2.5 border-2 border-white bg-main rounded-[100px]"
       >
         Book a call
       </motion.a>

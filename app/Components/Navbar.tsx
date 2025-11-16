@@ -17,7 +17,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-main text-white px-6 md:px-12 py-6 flex flex-wrap md:flex-nowrap justify-between items-center w-full sticky top-0 z-50 shadow-sm">
+    <nav className="bg-main text-white px-6 md:px-12 py-3 md:py-2 lg:py-2 flex flex-wrap md:flex-nowrap justify-between items-center w-full sticky top-0 z-50 shadow-sm">
       
       {/* Logo */}
       <div className="flex items-center">
